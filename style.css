@@ -1,0 +1,227 @@
+.table-btn {
+  height: 87px;
+  border-radius: 0;
+  margin: 0 0 1px !important;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding-right: 15px;
+  background-color: #d190b2;
+  color: white;
+}
+.table-btn:focus {
+  outline: none;
+  color: white;
+}
+.table-btn small {
+  font-size: 12px;
+}
+@media screen and (min-width: 992px) {
+  .room-tab.is-fixed {
+    position: fixed;
+    top: 0;
+  }
+  .room-tab.is-fixed + .timeline-table {
+    margin-left: 150px;
+  }
+}
+.active > .table-btn {
+  background-color: #a21f63;
+}
+.active > .table-btn:hover {
+  color: white;
+}
+.container {
+  width: 1024px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.title {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 34px;
+  line-height: 34px;
+}
+.clear {
+  clear: both;
+}
+.tab-btn-group .btn {
+  width: 232px;
+  height: 40px;
+  font-weight: 500;
+  border-radius: 0;
+  border-color: #cccccc;
+}
+.tab-btn-group .btn:focus {
+  outline: none;
+}
+.tab-btn-group .btn:hover {
+  z-index: 2;
+  position: relative;
+}
+.tab-btn-group .active .btn {
+  background-color: #a21f63;
+  color: white;
+}
+.tab-btn-group li:first-child .btn {
+  border-radius: 4px 0 0 4px;
+}
+.tab-btn-group li:last-child .btn {
+  border-radius: 0 4px 4px 0;
+}
+.tab-btn-group li:not(:first-child) .btn {
+  margin-left: -1px;
+}
+#prog-title {
+  margin: 72px 0 43px;
+}
+#prog-tab-btn {
+  margin: 0 0 50px;
+}
+#prog-tab-btn li {
+  padding: 0;
+  float: left;
+}
+.timeline-table {
+  width: 850px;
+}
+.room-tab {
+  width: 150px;
+}
+.room-tab p {
+  padding: 10px 15px;
+  color: #b2b2b2;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 22px;
+}
+#prog-content {
+  margin: 0 0 55px;
+  overflow: overlay;
+}
+.timeline-table table {
+  width: 100%;
+  empty-cells: show;
+  border-collapse: separate;
+}
+.timeline-table td {
+  border: 1px solid;
+  border-bottom: 0;
+  height: 88px;
+  padding: 0 15px;
+  border-color: #e5e5e5;
+  line-height: 20px;
+  background-color: #fbfbfb;
+}
+.timeline-table .time {
+  border: none;
+  border-bottom: 1px solid;
+  width: 95px;
+  text-align: center;
+  background-color: #a21f63;
+  color: white;
+}
+.timeline-table .uncolspan-left {
+  border-right: 0;
+}
+.timeline-table .uncolspan-right {
+  border-left: 0;
+}
+.timeline-table .cat {
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 95px;
+  padding-right: 11px;
+  color: #b2b2b2;
+  background-position: right center;
+  background-repeat: repeat-y;
+  background-size: 5px 1px;
+}
+.timeline-table .cat.blue {
+  background-image: url(img/band/blue_band.jpg);
+}
+.timeline-table .cat.orange {
+  background-image: url(img/band/orange_band.jpg);
+}
+.timeline-table .cat.green {
+  background-image: url(img/band/green_band.jpg);
+}
+.timeline-table .cat.red {
+  background-image: url(img/band/red_band.jpg);
+}
+.timeline-table .cat.brown {
+  background-image: url(img/band/brown_band.jpg);
+}
+.timeline-table .break {
+  height: 43px;
+  font-weight: 500;
+  padding-left: 110px;
+  background-color: white;
+}
+@media screen and (min-width: 992px) {
+  .time {
+    width: 95px;
+  }
+  .uncolspan-left {
+    width: 655px;
+  }
+  .cat {
+    width: 99px;
+  }
+  [colspan="2"] {
+    width: 754px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .time {
+    min-width: 95px;
+  }
+  [colspan="2"] {
+    width: 100%;
+  }
+  .uncolspan-left {
+    width: 100%;
+  }
+  .room-tab {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .room-tab ul {
+    margin: 0;
+  }
+  .room-tab li {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+  .room-tab li:last-child .table-btn {
+    text-align: left;
+    padding-left: 15px;
+  }
+  .room-tab p {
+    display: none;
+  }
+  .table-btn {
+    height: 50px !important;
+    margin: 0 !important;
+  }
+  .container {
+    width: 100%;
+  }
+  .timeline-table {
+    width: 100%;
+  }
+  .timeline-table .uncolspan-left,
+  .timeline-table [colspan="2"] {
+    border-right: 1px solid;
+    border-color: #E5E5E5;
+  }
+  #select-day {
+    margin-bottom: 7px;
+  }
+}
